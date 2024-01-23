@@ -45,7 +45,7 @@ public class BarPiece extends Piece {
 
     @Override
     public boolean rotate() {
-        boolean validPosition = true;
+        boolean validPosition = false;
 
         if (position == 0) {
 

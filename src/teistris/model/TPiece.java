@@ -43,7 +43,7 @@ public class TPiece extends Piece {
     
     @Override
     public boolean rotate() {
-        boolean validPosition = true;
+        boolean validPosition = false;
 
         switch (position) {
             case 0:
