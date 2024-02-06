@@ -38,7 +38,6 @@ public class BarPiece extends Piece {
         //Imprimo en pantalla a ficha
         for (int i = 0; i < squares.length; i++) {
             squares[i] = new Square(Game.MAX_X / 2 - Game.SQUARE_SIDE, Game.SQUARE_SIDE * i, Color.YELLOW, game);
-
         }
         position = 0;
     }
