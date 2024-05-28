@@ -7,7 +7,6 @@ package teistris.view;
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -33,7 +32,7 @@ public class MainWindow extends javax.swing.JFrame {
         timer = new Timer(1000, (ActionEvent evt) -> {
             btnDownActionPerformed(evt);
         });
-
+        
         KeyboardFocusManager manager = KeyboardFocusManager.getCurrentKeyboardFocusManager();
         manager.addKeyEventDispatcher(new KeyDispatcher(this));
     }
@@ -92,6 +91,8 @@ public class MainWindow extends javax.swing.JFrame {
         tglbtnPause.setSelected(false);
         // Establecemos o número de liñas que se mostran na ventá a cero
         lblNumberOfLines.setText("0");
+        //Poño o timer na velocidade inicial
+        timer.setDelay(1000);
         //Activo o timer
         timer.start();
     }
