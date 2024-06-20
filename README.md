@@ -1,4 +1,4 @@
-# Juego del ahorcado en Java - 1º DAW
+# Tetris en Java - 1º DAW
 
 Implementado con POO, siguiendo el patrón MVC.
 
